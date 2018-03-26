@@ -12,17 +12,14 @@ public class mavenTest {
         System.out.println("Enter your three favorite colors: ");
         String input = src.nextLine();
 
-        if (StringUtils.isNumeric(input) == true) {
-                System.out.println(input  + "is a number.");
-            } else {
-                System.out.println("'" + input + "' " + "is not a number");
-            }
+        if (StringUtils.isNumeric(input)) {
+            System.out.println(input + "is a number.");
+        } else {
+            System.out.println("'" + input + "' " + "is not a number");
+        }
 
-            System.out.println("Swapped Case: " + StringUtils.swapCase(input));
-            System.out.println("Reversed: " + StringUtils.reverse(input));
-
-
-
+        System.out.println("Flipped Case: " + StringUtils.swapCase(input));
+        System.out.println("Reversed: " + StringUtils.reverse(input));
 
     }
 
